@@ -12,7 +12,7 @@ $conn = new mysqli($servername, $username, $password, $database);
 $q = "SELECT * FROM brands";
 
 $res = $conn->query($q);
-$response = fetch_assoc();
+
 
 while($row = $res -> fetch_assoc()){
 printf ("%s (%s)\n", $row["brand_id"], $row["brand_name"]);
