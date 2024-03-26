@@ -8,16 +8,16 @@ import { Aumto } from './classes/Automo';
 
 function App() {
   const array = [
-  new Aumto("Negrobus","super auto polecam 11/10", "negrobus",5, "N","Makumba123"),
-   new Aumto("Dorożka","Moc: 2 konie (nie) mechaniczne", "konie",2, "śmierdzi koniem", "bmesdhvkb"),
-   new Aumto("Auto Freda","styl retro", "flintstone",4, "^_^", "barney_rubble"),
-   new Aumto("Słoń bojowy","kto by nie chciał słonia bojowego", "elephant",5, "polecam", "Hannibal")  ]
+  new Aumto("Negrobus","super auto polecam 11/10", 5, "N","Makumba123"),
+   new Aumto("Dorożka","Moc: 2 konie (nie) mechaniczne", 2, "śmierdzi koniem", "bmesdhvkb"),
+   new Aumto("Auto Freda","styl retro", 4, "^_^", "barney_rubble"),
+   new Aumto("Słoń bojowy","kto by nie chciał słonia bojowego", 5, "polecam", "Hannibal")  ]
   return (
     <>
     {
       array.map(e => (<div className="car_card" key={e.name}>
       <div style={{"float":"left"}} className="car_info">
-      <img style={{"width":"250px", "height":"200px"}} src={require("./"+ e.img + ".png")}></img>
+
 
       </div>
       <div style={{"float":"left"}}>
