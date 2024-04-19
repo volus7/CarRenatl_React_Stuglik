@@ -3,9 +3,12 @@ import React from 'react'
 export const Props = ({props}) => {
   return (
     <div>
-        <h2>{props.name}</h2>
-        <p>{props.desc}</p>
-        </div>
+        {
+          Object.entries(props).map(([key, value], ind)=>{
+            return <p key={ind}>{key}: {value}</p>
+          })
+        }
+    </div>
   )
 }
 export default Props;

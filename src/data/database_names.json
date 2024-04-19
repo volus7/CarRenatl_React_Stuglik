@@ -1,0 +1,13 @@
+[
+    "clients",
+    "rentals",
+    "cars",
+    "models",
+    "payments",
+    "payment_methods",
+    "types",
+    "brands",
+    "rented",
+    "archive",
+    "is_payed"
+]

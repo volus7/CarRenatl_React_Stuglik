@@ -1,13 +1,10 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+require_once "db_connect.php";
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "rent_the_car";
+$table_name = $_POST['table_name'];
 
-$conn = new mysqli($servername, $username, $password, $database);
-
-$q = "SELECT * FROM brands";
+$q = "SELECT * FROM $table_name";
 
 $res = $conn->query($q);
 $response = [];
